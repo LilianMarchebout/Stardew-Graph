@@ -1,33 +1,43 @@
 import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 
-// Déclarer les variables DOM/Renderer pour qu'elles soient gérées localement.
-// NE FAITES PLUS de document.getElementById ici.
 let renderer = null;
-let currentGraphKey = null; // Nouvelle variable pour suivre le graphe actif
+let currentGraphKey = null;
+let currentSearchHandler = null; // Stoque la référence de la fonction d'écouteur pour la suppression
 
 /**
- * Arrête et nettoie l'instance Sigma précédente.
+ * Stops and cleans up the previous Sigma instance and search listener.
  */
 export function killRenderer() {
     if (renderer) {
+        // Supprimer tous les écouteurs de Sigma
+        renderer.removeAllListeners(); 
         renderer.kill();
         renderer = null;
         currentGraphKey = null;
-        // Optionnel: masquer le tooltip et vider la recherche
-        document.getElementById("tooltip").style.display = "none";
-        document.getElementById("search-input").value = "";
+        
+        // FIX CLÉ : Suppression explicite de l'écouteur de recherche du DOM
+        const searchInput = document.getElementById("search-input");
+        if (searchInput && currentSearchHandler) {
+            searchInput.removeEventListener("keydown", currentSearchHandler);
+            currentSearchHandler = null; // Nettoyer la référence
+        }
+
+        const tooltip = document.getElementById("tooltip");
+        if (tooltip) tooltip.style.display = "none";
+        if (searchInput) searchInput.value = "";
     }
 }
 
 /**
- * Applique le ForceAtlas2 layout et normalise les coordonnées.
+ * Applies the ForceAtlas2 layout and normalizes coordinates.
  * @param {Graph} graph - The graphology instance.
  */
 function applyLayout(graph) {
-  // ... (Pas de changement dans cette fonction) ...
+  // Apply ForceAtlas2 layout
   forceAtlas2.assign(graph, { iterations: 100, settings: { gravity: 1 } });
 
+  // Normalize coordinates (-1 to 1) for better initial view
   const xs = [], ys = [];
   graph.forEachNode((n, attr) => { xs.push(attr.x); ys.push(attr.y); });
   const minX = Math.min(...xs), maxX = Math.max(...xs);
@@ -52,24 +62,21 @@ function applyLayout(graph) {
  * @param {Sigma} renderer - The Sigma renderer instance.
  */
 function registerEventListeners(graph, renderer) {
-  // Références au DOM (recherchées ici pour plus de sécurité)
+  // Références au DOM (cherchées ici pour plus de sécurité)
   const tooltip = document.getElementById("tooltip");
   const searchInput = document.getElementById("search-input");
 
   // --- Node Hover + Tooltip Logic ---
-  // ... (Le reste du code de hover, leave et mousemove reste le même) ...
   renderer.on("enterNode", ({ node }) => {
     const neighbors = new Set(graph.neighbors(node));
     neighbors.add(node);
 
-    // Dim non-neighbors
+    // Dim non-neighbors (Logic omise pour la brièveté, mais elle doit être ici)
     graph.forEachNode(n => {
       if (neighbors.has(n)) {
-        // Restore original attributes for neighbors
         graph.setNodeAttribute(n, "color", graph.getNodeAttribute(n, "originalColor"));
         graph.setNodeAttribute(n, "size", graph.getNodeAttribute(n, "originalSize"));
       } else {
-        // Dim non-neighbors
         graph.setNodeAttribute(n, "color", "#555");
         graph.setNodeAttribute(n, "size", graph.getNodeAttribute(n, "originalSize") * 0.7);
       }
@@ -86,9 +93,10 @@ function registerEventListeners(graph, renderer) {
       }
     });
 
-    // Update and show tooltip
-    tooltip.innerHTML = `<strong>${graph.getNodeAttribute(node, "label")}</strong>`;
-    tooltip.style.display = "block";
+    if (tooltip) {
+        tooltip.innerHTML = `<strong>${graph.getNodeAttribute(node, "label")}</strong>`;
+        tooltip.style.display = "block";
+    }
   });
 
   renderer.on("leaveNode", () => {
@@ -100,13 +108,14 @@ function registerEventListeners(graph, renderer) {
     graph.forEachEdge(e => {
       graph.setEdgeAttribute(e, "color", graph.getEdgeAttribute(e, "originalColor"));
     });
-    tooltip.style.display = "none";
+    if (tooltip) tooltip.style.display = "none";
   });
 
-  // Position tooltip next to cursor
   renderer.getMouseCaptor().on("mousemovebody", (event) => {
-    tooltip.style.left = event.clientX + 10 + "px";
-    tooltip.style.top = event.clientY + 10 + "px";
+    if (tooltip) {
+        tooltip.style.left = event.clientX + 10 + "px";
+        tooltip.style.top = event.clientY + 10 + "px";
+    }
   });
 
   // --- Node Click → Open Wiki ---
@@ -118,42 +127,54 @@ function registerEventListeners(graph, renderer) {
 
   // --- Search Functionality ---
   if (searchInput) {
-    searchInput.addEventListener("keydown", (e) => {
+    // Définition de la fonction d'écouteur
+    const searchHandler = (e) => {
       if (e.key === "Enter") {
         let query = searchInput.value.trim();
         if (!query) return;
 
-        // Capitalize the first letter of each word (better matching with graph labels)
+        // Standardiser la requête
         query = query.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()); 
 
-        // Filter all nodes that match the query
+        // Filtrer
         let matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label") === query);
         if (matches.length === 0) {
           matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label").startsWith(query));
         }
-        // ... (Le reste de la logique de recherche reste le même) ...
 
         if (matches.length === 1) {
           const nodeId = matches[0];
-          const nodeDisplay = renderer.getNodeDisplayData(nodeId);
           const camera = renderer.getCamera();
 
-          // Animate camera to center on the found node
-          camera.animate({ x: nodeDisplay.x, y: nodeDisplay.y, ratio: 0.1 }, { duration: 600 });
+          // FIX CLÉ : Tente d'utiliser les coordonnées du rendu (préféré), sinon utilise les coordonnées logiques (fallback)
+          let nodeDisplay = renderer.getNodeDisplayData(nodeId);
+          let targetX, targetY;
+          
+          if (nodeDisplay) {
+            targetX = nodeDisplay.x;
+            targetY = nodeDisplay.y;
+          } else {
+            // Solution de repli pour éviter le crash au chargement du graphe
+            const nodeAttributes = graph.getNodeAttributes(nodeId);
+            targetX = nodeAttributes.x;
+            targetY = nodeAttributes.y;
+          }
 
-          // Temporary highlight
+          // Animation
+          camera.animate({ x: targetX, y: targetY, ratio: 0.1 }, { duration: 600 });
+
+          // Surbrillance
           graph.forEachNode(n => {
             if (n === nodeId) {
               graph.setNodeAttribute(n, "size", graph.getNodeAttribute(n, "originalSize") * 1.5);
-              graph.setNodeAttribute(n, "color", "#ff0000"); // Highlight in Red
+              graph.setNodeAttribute(n, "color", "#ff0000"); 
             } else {
-              // Restore others
               graph.setNodeAttribute(n, "size", graph.getNodeAttribute(n, "originalSize"));
               graph.setNodeAttribute(n, "color", graph.getNodeAttribute(n, "originalColor"));
             }
           });
 
-          // Clear highlight after animation duration
+          // Clear highlight
           setTimeout(() => {
               graph.setNodeAttribute(nodeId, "size", graph.getNodeAttribute(nodeId, "originalSize"));
               graph.setNodeAttribute(nodeId, "color", graph.getNodeAttribute(nodeId, "originalColor"));
@@ -165,7 +186,11 @@ function registerEventListeners(graph, renderer) {
           alert("Node not found!");
         }
       }
-    });
+    };
+    
+    // **FIX CLÉ** : Stocker la référence et attacher le nouvel écouteur.
+    currentSearchHandler = searchHandler;
+    searchInput.addEventListener("keydown", currentSearchHandler);
   }
 }
 
@@ -173,10 +198,10 @@ function registerEventListeners(graph, renderer) {
 /**
  * Initializes the Sigma renderer and registers all interactions.
  * @param {Graph} graph - The fully populated graphology instance.
- * @param {string} key - La clé du graphe actuel (pour référence future).
+ * @param {string} key - The key of the current graph.
  */
 export function initGraphRenderer(graph, key) {
-  currentGraphKey = key; // Stocker la clé
+  currentGraphKey = key;
 
   // 1. Apply Layout
   applyLayout(graph);

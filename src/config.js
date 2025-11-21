@@ -7,22 +7,21 @@ export const GRAPH_CONFIGS = {
   crafting: {
     name: "Crafting",
     csvPath: "Crafting.csv",
-    parser: processCraftingData,
+    parser: processData,
     recipeColor: "#33aaff",
     ingredientColor: "#d86c00ff",
     recipeSize: 10,
     ingredientSize: 8,
   },
-  // Exemple futur pour un autre jeu/graphe :
-  // other_game_recipes: {
-  //   name: "Other Game Recipes",
-  //   csvPath: "OtherGame.csv",
-  //   parser: processOtherGameData,
-  //   recipeColor: "#ff44aa",
-  //   ingredientColor: "#aaff44",
-  //   recipeSize: 12,
-  //   ingredientSize: 7,
-  // },
+  cooking: {
+    name: "Cooking",
+    csvPath: "Cooking.csv",
+    parser: processData,
+    recipeColor: "#ff44aa",
+    ingredientColor: "#aaff44",
+    recipeSize: 12,
+    ingredientSize: 7,
+  },
 };
 
 
@@ -32,7 +31,7 @@ export const GRAPH_CONFIGS = {
  * @param {Array<Object>} data - Les données CSV parsées.
  * @param {Object} config - La configuration du graphe actuel.
  */
-function processCraftingData(graph, data, config) {
+function processData(graph, data, config) {
   data.forEach((row, i) => {
     // Only process rows that define a recipe (0% column is not empty)
     if (row["0%"] !== "") {
@@ -45,7 +44,7 @@ function processCraftingData(graph, data, config) {
         .map(item => item.replace(/\s*\(.*?\)\s*/g, "").trim())
         .filter(item => item.length > 0); // Remove empty strings
 
-      // Recipe Node (Blue)
+      // Recipe Node
       if (!graph.hasNode(recipe)) {
         graph.addNode(recipe, {
           x: Math.random(),
@@ -59,7 +58,7 @@ function processCraftingData(graph, data, config) {
         });
       }
 
-      // Ingredient Nodes (Orange) and Edges
+      // Ingredient Nodes and Edges
       ingredients.forEach(ing => {
         if (!graph.hasNode(ing)) {
           graph.addNode(ing, {
