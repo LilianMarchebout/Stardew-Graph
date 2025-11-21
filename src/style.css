@@ -1,19 +1,19 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #252525;  /* fond sombre */
+  background-color: #252525; 
   color: #ffffff;
 }
 
 #graph-container {
   width: 100vw;
   height: 100vh;
-  background-color: #212121; /* fond sombre du graphe */
+  background-color: #212121; 
   position: relative;
 }
 
 #search-input {
-  position: absolute;
+   position: absolute;
   top: 10px;
   left: 10px;
   padding: 6px 10px;
@@ -29,4 +29,22 @@ div.tooltip {
   background-color: #2e2e3f;
   color: #fff;
   border: 1px solid #555;
+}
+
+#center-control-container {
+  position: absolute;
+  top: 10px;
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#graph-select, #search-input {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 0; 
 }
