@@ -138,8 +138,13 @@ function registerEventListeners(graph, renderer) {
 
         // Filtrer
         let matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label") === query);
+
         if (matches.length === 0) {
-          matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label").startsWith(query));
+            const lowerCaseQuery = searchInput.value.trim().toLowerCase(); 
+        
+            matches = graph.nodes().filter(n => 
+                graph.getNodeAttribute(n, "label").toLowerCase().includes(lowerCaseQuery)
+            );
         }
 
         if (matches.length === 1) {
