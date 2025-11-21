@@ -1,0 +1,157 @@
+0%,Crafting Perfection Progress,,,,,,,,,,
+,,,,,,,,,,,
+,,Recipe - Page 1,Ingredients,Recipe Source,,Total Materials Needed,,,,,
+FALSE,,Wood Fence,Wood(2),Starter,,,#,Item,,#,Item
+FALSE,,Stone Fence,Stone(2),Farming Lv 2,,Crops/Seeds,,,Resources,,
+FALSE,,Iron Fence (10),Iron Bar,Farming Lv 4,,FALSE,1,Blue Jazz Seeds,FALSE,11,Battery Pack
+FALSE,,Hardwood Fence,Hardwood,Farming Lv 6,,FALSE,10,Garlic,FALSE,133,Bone Fragment
+FALSE,,Grass Starter,Fiber(10),"General Store for 1,000g",,FALSE,1,Fairy Rose,FALSE,20,Cinder Shard
+FALSE,,Blue Grass Starter,"Fiber(25), Moss(10), Mystic Syrup",Qi's Walnut Room for 40 Qi Gems,,FALSE,1,Poppy Seeds,FALSE,11,Clay
+FALSE,,Gate,Wood(10),Starter,,FALSE,1,Pumpkin,FALSE,95,Coal
+FALSE,,Chest,Wood(50),Starter,,FALSE,1,Spangle Seeds,FALSE,18,Copper Bar
+FALSE,,Big Chest,"Wood(120), Copper Bar(2)","Carpenter's Shop for 5,000g",,FALSE,1,Tulip Bulb,FALSE,28,Copper Ore
+FALSE,,Stone Chest,Stone(50),"Robin, after completing ""Robin's Resource Rush""",,Forage,,,FALSE,"1,328",Fiber
+FALSE,,Big Stone Chest,Stone(250),"Dwarf's Shop for 5,000g",,FALSE,6,Acorn,FALSE,40,Gold Bar
+FALSE,,Torch,"Wood, Sap(2)",Starter,,FALSE,1,Blackberry,FALSE,4,Gold Ore
+FALSE,,Dehydrator,"Wood(30), Clay(2), Fire Quartz","Pierre's Shop for 10,000g",,FALSE,1,Chanterelle,FALSE,243,Hardwood
+FALSE,,Scarecrow,"Wood(50), Coal, Fiber(20)",Farming Lv 1,,FALSE,1,Clam,FALSE,53,Iridium Bar
+FALSE,,Deluxe Scarecrow,"Wood(50), Fiber(40), Iridium Ore",Collect all Rarecrows (Guide on 'Misc.' tab),,FALSE,1,Coconut,FALSE,5,Iridium Ore
+FALSE,,Bee House,"Wood(40), Coal(8), Iron Bar, Maple Syrup",Farming Lv 3,,FALSE,1,Common Mushroom,FALSE,103,Iron Bar
+FALSE,,Keg,"Wood(30), Copper Bar, Iron Bar, Oak Resin",Farming Lv 8,,FALSE,6,Coral,FALSE,4,Iron Ore
+FALSE,,Cask,"Wood(20), Hardwood",Farmhouse cellar upgrade,,FALSE,1,Crocus,FALSE,2,Radioactive Bar
+FALSE,,Furnace,"Copper Ore(20), Stone(25)","Clint, after collecting a Copper Ore",,FALSE,1,Crystal Fruit,FALSE,2,Radioactive Ore
+FALSE,,Heavy Furnace,"Furnace(2), Iron Bar(3), Stone(50)",Mining Mastery,,FALSE,1,Dandelion,FALSE,27,Refined Quartz
+FALSE,,Anvil,Iron Bar(50),Combat Mastery,,FALSE,1,Daffodil,FALSE,"1,080",Sap
+,,Recipe - Page 2,Ingredients,Recipe Source,,FALSE,1,Ginger,FALSE,"2,059",Stone
+FALSE,,Mini-Forge,"Dragon Tooth(5), Iron Bar(10), Gold Bar(10), Iridium Bar(5)",Combat Mastery,,FALSE,1,Grape,FALSE,944,Wood
+FALSE,,Garden Pot,"Clay, Stone(10), Refined Quartz","Evelyn, after unlocking Greenhouse",,FALSE,1,Hazelnut,Monster Drops,,
+FALSE,,Wood Sign,Wood(25),Starter,,FALSE,1,Leek,FALSE,40,Bat Wing
+FALSE,,Stone Sign,Stone(25),Starter,,FALSE,6,Maple Seed,FALSE,44,Bug Meat
+FALSE,,Dark Sign,"Bat Wing(5), Bone Fragment(5)",Krobus - 3 Hearts,,FALSE,1,Mixed Seeds,FALSE,6,Dragon Tooth
+FALSE,,Text Sign,Wood(25),Starter,,FALSE,5,Mahogany Seed,FALSE,220,Slime
+FALSE,,Cheese Press,"Wood(45), Stone(45), Hardwood(10), Copper Bar",Farming Lv 6,,FALSE,1,Morel,FALSE,83,Solar Essence
+FALSE,,Mayonnaise Machine,"Wood(15), Stone(15), Earth Crystal, Copper Bar",Farming Lv 2,,FALSE,397,Moss,FALSE,51,Void Essence
+FALSE,,Seed Maker,"Wood(25), Coal(10), Gold Bar",Farming Lv 9,,FALSE,6,Pine Cone,Artifacts / Minerals,,
+FALSE,,Loom,"Wood(60), Fiber(30), Pine Tar",Farming Lv 7,,FALSE,1,Purple Mushroom,FALSE,1,Ancient Seed (Artifact)
+FALSE,,Oil Maker,"Slime(50), Hardwood(20), Gold Bar",Farming Lv 8,,FALSE,1,Red Mushroom,FALSE,1,Aquamarine
+FALSE,,Recycling Machine,"Wood(25), Stone(25), Iron Bar",Fishing Lv 4,,FALSE,1,Sea Urchin,FALSE,3,Diamond
+FALSE,,Worm Bin,"Hardwood(15), Gold Bar, Iron Bar, Fiber(50)",Fishing Lv 4,,FALSE,1,Snow Yam,FALSE,1,Dwarf Gadget
+FALSE,,Deluxe Worm Bin,"Worm Bin(1), Moss(30)",Fishing Lv 8,,FALSE,1,Spice Berry,FALSE,1,Earth Crystal
+FALSE,,Bait Maker,"Iron Bar(3), Coral(3), Sea Urchin",Fishing Lv 6,,FALSE,1,Sweet Pea,FALSE,2,Fire Quartz
+FALSE,,Fish Smoker,"Hardwood(10), Sea Jelly, River Jelly, Cave Jelly","Willy's Shop for 10,000g",,FALSE,1,Wild Horseradish,FALSE,10,Frozen Tear
+FALSE,,Preserves Jar,"Wood(50), Stone(40), Coal(8)",Farming Lv 4,,FALSE,1,Wild Plum,FALSE,1,Marble
+FALSE,,Charcoal Kiln,"Wood(20), Copper Bar(2)",Foraging Lv 2,,FALSE,1,Winter Root,Other,,
+FALSE,,Tapper,"Wood(40), Copper Bar(2)",Foraging Lv 4,,Animal / Artisan,,,FALSE,5,Bait
+FALSE,,Mushroom Log,"Hardwood(10), Moss(10)",Foraging Lv 4,,FALSE,2,Cloth,FALSE,1,Cave Jelly
+,,Recipe - Page 3,Ingredients,Recipe Source,,FALSE,1,Honey,FALSE,2,Fish (any)
+FALSE,,Lightning Rod,"Iron Bar, Refined Quartz, Bat Wing(5)",Foraging Lv 6,,FALSE,1,Maple Syrup,FALSE,2,Furnace
+FALSE,,Slime Incubator,"Iridium Bar(2), Slime(100)",Combat Lv 8,,FALSE,2,Mystic Syrup,FALSE,1,Oil
+FALSE,,Slime Egg-Press,"Coal(25), Fire Quartz, Battery Pack",Combat Lv 6,,FALSE,2,Oak Resin,FALSE,1,River Jelly
+FALSE,,Crystalarium,"Stone(99), Gold Bar(5), Iridium Bar(5), Battery Pack",Mining Lv 9,,FALSE,7,Pine Tar,FALSE,1,Sea Jelly
+FALSE,,Mini-Jukebox,"Iron Bar(2), Battery Pack",Gus' 5-Heart event,,FALSE,1,Truffle Oil,FALSE,1,Torch
+FALSE,,Sprinkler,"Copper Bar, Iron Bar",Farming Lv 2,,,,,FALSE,2,Wild Seeds (any)
+FALSE,,Quality Sprinkler,"Iron Bar, Gold Bar, Refined Quartz",Farming Lv 6,,,,,FALSE,1,Worm Bin
+FALSE,,Iridium Sprinkler,"Gold Bar, Iridium Bar, Battery Pack",Farming Lv 9,,,,,,,
+FALSE,,Flute Block,"Wood(10), Copper Ore(2), Fiber(20)","Robin, after her 6-Heart event",,,,,,,
+FALSE,,Drum Block,"Stone(10), Copper Ore(2), Fiber(20)","Robin, after her 6-Heart event",,,,,,,
+FALSE,,Staircase,Stone(99),Mining Lv 2,,,,,,,
+FALSE,,Mystic Tree Seed,"Acorn(5), Maple Seed(5), Pine Cone(5), Mahogany Seed(5)",Foraging Mastery,,,,,,,
+FALSE,,Basic Fertilizer,Sap(2),Farming Lv 1,,,,,,,
+FALSE,,Tree Fertilizer,"Fiber(5), Stone(5)",Foraging Lv 7,,,,,,,
+FALSE,,Quality Fertilizer (2),"Sap(2), Any Fish",Farming Lv 9,,,,,,,
+FALSE,,Basic Retaining Soil,Stone(2),Farming Lv 4,,,,,,,
+FALSE,,Quality Retaining Soil (2),"Stone(3), Clay",Farming Lv 7,,,,,,,
+FALSE,,Speed-Gro (5),"Pine Tar, Moss(5)",Farming Lv 3,,,,,,,
+FALSE,,Deluxe Speed-Gro (5),"Oak Resin, Bone Fragments(5)",Farming Lv 8,,,,,,,
+FALSE,,Hyper Speed-Gro,"Radioactive Ore, Bone Fragment(3), Solar Essence",Qi's Walnut Room for 30 Gems,,,,,,,
+FALSE,,Deluxe Fertilizer (5),"Iridium Bar, Sap(40)",Qi's Walnut Room for 20 Gems,,,,,,,
+FALSE,,Deluxe Retaining Soil,"Stone(5), Fiber(3), Clay",Island Trader for 50 Cinder Shards,,,,,,,
+FALSE,,Cherry Bomb,"Copper Ore(4), Coal",Mining Lv 1,,,,,,,
+FALSE,,Bomb,"Iron Ore(4), Coal",Mining Lv 6,,,,,,,
+FALSE,,Mega Bomb,"Gold Ore(4), Solar Essence, Void Essence",Mining Lv 8,,,,,,,
+FALSE,,Explosive Ammo (5),"Iron Bar, Coal(2)",Combat Lv 8,,,,,,,
+FALSE,,Iron Bar,Copper Bar(3),Mining Lv 4,,,,,,,
+FALSE,,Gold Bar,Iron Bar(2),Mining Lv 7,,,,,,,
+FALSE,,Ancient Seeds (Crop),Ancient Seed (Artifact),Donate Ancient Seed Artifact to Museum,,,,,,,
+FALSE,,Wild Seeds - Spring (10),"Wild Horseradish, Daffodil, Leek, Dandelion",Foraging Lv 1,,,,,,,
+FALSE,,Wild Seeds - Summer (10),"Spice Berry, Grape, Sweet Pea",Foraging Lv 4,,,,,,,
+FALSE,,Wild Seeds - Fall (10),"Common Mushroom, Wild Plum, Hazelnut, Blackberry",Foraging Lv 6,,,,,,,
+FALSE,,Wild Seeds - Winter (10),"Winter Root, Crystal Fruit, Snow Yam, Crocus",Foraging Lv 7,,,,,,,
+FALSE,,Fiber Seeds (4),"Mixed Seeds, Sap(5), Clay","Linus, after completing ""Community Cleanup""",,,,,,,
+,,Recipe - Page 4,Ingredients,Recipe Source,,,,,,,
+FALSE,,Tea Sapling,"Any Wild Seeds(2), Fiber(5), Wood(5)","Caroline, after her 2-Heart event",,,,,,,
+FALSE,,Warp Totem: Farm,"Hardwood, Honey, Fiber(20)",Foraging Lv 8,,,,,,,
+FALSE,,Warp Totem: Mountains,"Hardwood, Iron Bar, Stone(25)",Foraging Lv 7,,,,,,,
+FALSE,,Warp Totem: Beach,"Hardwood, Coral(2), Fiber(10)",Foraging Lv 6,,,,,,,
+FALSE,,Warp Totem: Desert,"Hardwood(2), Coconut, Iridium Ore(4)",Desert Trader for 10 Iridium Bars,,,,,,,
+FALSE,,Warp Totem: Island,"Hardwood(5), Dragon Tooth, Ginger","Volcano Dwarf's Shop for 10,000g",,,,,,,
+FALSE,,Rain Totem,"Hardwood, Truffle Oil, Pine Tar(5)",Foraging Lv 9,,,,,,,
+FALSE,,Treasure Totem,"Hardwood(5), Mystic Syrup, Moss(10)",Foraging Mastery,,,,,,,
+FALSE,,Cookout Kit,"Wood(15), Fiber(10), Coal(3)",Foraging Lv 3,,,,,,,
+FALSE,,Tent Kit,"Hardwood(10), Fiber(25), Cloth",Foraging Lv 8,,,,,,,
+FALSE,,Field Snack,"Acorn, Maple Seed, Pine Cone",Foraging Lv 1,,,,,,,
+FALSE,,Jack-O-Lantern,"Pumpkin, Torch","Pierre at the Spirit's Eve Festival for 2,000g",,,,,,,
+FALSE,,Statue of Blessings,"Sap(999), Fiber(999), Stone(999), Moss(333)",Farming Mastery,,,,,,,
+FALSE,,Statue of the Dwarf King,Iridium Bar(20),Mining Mastery,,,,,,,
+FALSE,,Wood Floor,Wood,Carpenter's Shop for 100g,,,,,,,
+FALSE,,Straw Floor,"Wood, Fiber",Carpenter's Shop for 200g,,,,,,,
+FALSE,,Weathered Floor,Wood,Dwarf's Shop for 500g,,,,,,,
+FALSE,,Rustic Plank Floor,Wood,Carpenter's Shop for 200g,,,,,,,
+FALSE,,Crystal Floor (5),Refined Quartz,Krobus' Shop for 500g,,,,,,,
+FALSE,,Stone Floor,Stone,Carpenter's Shop for 100g,,,,,,,
+FALSE,,Stone Walkway Floor,Stone,Carpenter's Shop for 200g,,,,,,,
+FALSE,,Brick Floor (5),"Clay(2), Stone(5)",Carpenter's Shop for 500g,,,,,,,
+FALSE,,Wood Path,Wood,Starter,,,,,,,
+FALSE,,Gravel Path,Stone,Starter,,,,,,,
+FALSE,,Cobblestone Path,Stone,Starter,,,,,,,
+FALSE,,Stepping Stone Path,Stone,Carpenter's Shop for 100g,,,,,,,
+FALSE,,Crystal Path,Refined Quartz,Carpenter's Shop for 200g,,,,,,,
+FALSE,,Bait (5),Bug Meat,Fishing Lv 2,,,,,,,
+FALSE,,Deluxe Bait (5),"Bait(5), Moss(2)",Fishing Lv 4,,,,,,,
+FALSE,,Wild Bait (5),"Fiber(10), Bug Meat(5), Slime(5)",Linus' 4-Heart event,,,,,,,
+FALSE,,Challenge Bait (5),"Bone Fragment(5), Moss(2)",Fishing Mastery,,,,,,,
+FALSE,,Magnet (3),Iron Bar,Fishing Lv 9,,,,,,,
+FALSE,,Spinner,Iron Bar(2),Fishing Lv 6,,,,,,,
+FALSE,,Dressed Spinner,"Iron Bar(2), Cloth",Fishing Lv 8,,,,,,,
+FALSE,,Trap Bobber,"Copper Bar, Sap(10)",Fishing Lv 6,,,,,,,
+FALSE,,Sonar Bobber,"Iron Bar, Refined Quartz(2)",Fishing Lv 6,,,,,,,
+FALSE,,Cork Bobber,"Wood(10), Hardwood(5), Slime(10)",Fishing Lv 7,,,,,,,
+FALSE,,Treasure Hunter,Gold Bar(2),Fishing Lv 7,,,,,,,
+,,Recipe - Page 5,Ingredients,Recipe Source,,,,,,,
+FALSE,,Barbed Hook,"Copper Bar, Iron Bar, Gold Bar",Fishing Lv 8,,,,,,,
+FALSE,,Oil of Garlic,"Garlic(10), Oil",Combat Lv 6,,,,,,,
+FALSE,,Life Elixir,"Red Mushroom , Purple Mushroom, Morel, Chanterelle",Combat Lv 2,,,,,,,
+FALSE,,Crab Pot,"Wood(40), Iron Bar(3); Trapper Profession: Wood(25), Copper Bar(2)",Fishing Lv 3,,,,,,,
+FALSE,,Iridium Band,"Iridium Bar(5), Solar Essence(50), Void Essence(50)",Combat Lv 9,,,,,,,
+FALSE,,Ring of Yoba,"Gold Bar(5), Iron Bar(5), Diamond",Combat Lv 7,,,,,,,
+FALSE,,Sturdy Ring,"Copper Bar(2), Bug Meat(25), Slime(25)",Combat Lv 1,,,,,,,
+FALSE,,Warrior Ring,"Iron Bar(10), Coal(25), Frozen Tear(10)",Combat Lv 4,,,,,,,
+FALSE,,Tub o' Flowers,"Wood(15), Tulip Bulb, Jazz Seeds, Poppy Seeds, Spangle Seeds","Pierre at the Flower Dance for 2,000g",,,,,,,
+FALSE,,Wooden Brazier,"Wood(10), Coal, Fiber(5)",Carpenter's Shop for 250g,,,,,,,
+FALSE,,Wicked Statue,"Stone(25), Coal(5)","Krobus' Shop for 1,000g",,,,,,,
+FALSE,,Stone Brazier,"Stone(10), Coal, Fiber(5)",Carpenter's Shop for 400g,,,,,,,
+FALSE,,Gold Brazier,"Gold Bar, Coal, Fiber(5)","Carpenter's Shop for 1,000g",,,,,,,
+FALSE,,Campfire,"Stone(10), Wood(10), Fiber(10)",Starter,,,,,,,
+FALSE,,Stump Brazier,"Hardwood(5), Coal",Carpenter's Shop for 800g,,,,,,,
+FALSE,,Carved Brazier,"Hardwood(10), Coal","Carpenter's Shop for 2,000g",,,,,,,
+FALSE,,Skull Brazier,Bone Fragment(10),"Carpenter's Shop for 3,000g",,,,,,,
+FALSE,,Barrel Brazier,"Wood(50), Solar Essence, Coal",Carpenter's Shop for 800g,,,,,,,
+FALSE,,Marble Brazier,"Marble, Aquamarine, Stone(100)","Carpenter's Shop for 5,000g",,,,,,,
+FALSE,,Wood Lamp-post,"Wood(50), Battery Pack",Carpenter's Shop for 500g,,,,,,,
+,,Recipe - Page 6,Ingredients,Recipe Source,,,,,,,
+FALSE,,Iron Lamp-post,"Iron Bar, Battery Pack","Carpenter's Shop for 1,000g",,,,,,,
+FALSE,,Fairy Dust,"Diamond, Fairy Rose","Birdie, after completing ""The Pirate's Wife""",,,,,,,
+FALSE,,Bug Steak,Bug Meat(10),Combat Lv 1,,,,,,,
+FALSE,,Quality Bobber,"Copper Bar, Sap(20), Solar Essence(5)","Willy, after completing ""Juicy Bugs Wanted""",,,,,,,
+FALSE,,Monster Musk,"Bat Wing(30), Slime(30)","Wizard, after completing ""Prismatic Jelly""",,,,,,,
+FALSE,,Thorns Ring,"Bone Fragment(50), Stone(50), Gold Bar",Combat Lv 7,,,,,,,
+FALSE,,Glowstone Ring,"Solar Essence(5), Iron Bar(5)",Mining Lv 4,,,,,,,
+FALSE,,Mini-Obelisk,"Hardwood(30), Solar Essence(20), Gold Bar(3)","Wizard, after completing ""A Curious Substance""",,,,,,,
+FALSE,,Farm Computer,"Dwarf Gadget, Battery Pack, Refined Quartz(10)","Demetrius, after completing ""Aquatic Overpopulation"" OR ""Biome Balance""",,,,,,,
+FALSE,,Ostrich Incubator,"Bone Fragment(50), Hardwood(50), Cinder Shard(20)",Complete the Island Field Office Collection,,,,,,,
+FALSE,,Geode Crusher,"Gold Bar(2), Stone(50), Diamond","Clint, after completing ""Cave Patrol""",,,,,,,
+FALSE,,Heavy Tapper,"Hardwood(30), Radioactive Bar",Qi's Walnut Room for 20 Qi Gems,,,,,,,
+FALSE,,Hopper,"Hardwood(10), Iridium Bar, Radioactive Bar",Qi's Walnut Room for 50 Gems,,,,,,,
+FALSE,,Solar Panel,"Refined Quartz(10), Iron Bar(5), Gold Bar(5)","Caroline, after completing ""Island Ingredients""",,,,,,,
+FALSE,,Bone Mill,"Bone Fragment(10), Clay(3), Stone(20)","Gunther, after completing ""Fragments of the Past""",,,,,,,
+FALSE,,Magic Bait (5),"Radioactive Ore, Bug Meat(3)",Qi's Walnut Room for 20 Qi Gems,,,,,,,
