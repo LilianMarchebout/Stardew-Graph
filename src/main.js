@@ -6,7 +6,6 @@ import { initGraphRenderer } from "./graph.js";
 function loadAndBuildGraph() {
   const graph = new Graph();
   const csvPath = import.meta.env.BASE_URL + "Crafting.csv";
-  console.log(`Loading CSV from: ${csvPath}`);
 
   Papa.parse(csvPath, {
     download: true,

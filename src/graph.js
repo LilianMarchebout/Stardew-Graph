@@ -110,7 +110,6 @@ function registerEventListeners(graph, renderer) {
         matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label").startsWith(query));
       }
 
-
       if (matches.length === 1) {
         const nodeId = matches[0];
         const nodeDisplay = renderer.getNodeDisplayData(nodeId);
