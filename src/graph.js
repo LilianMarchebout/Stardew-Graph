@@ -105,7 +105,11 @@ function registerEventListeners(graph, renderer) {
       query = query.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()); 
 
       // Filter all nodes that match the query
-      const matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label").startsWith(query));
+      let matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label") === query);
+      if (matches.length === 0) {
+        matches = graph.nodes().filter(n => graph.getNodeAttribute(n, "label").startsWith(query));
+      }
+
 
       if (matches.length === 1) {
         const nodeId = matches[0];
