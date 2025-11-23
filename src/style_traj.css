@@ -1,0 +1,130 @@
+/* src/style_traj.css - Thème Sombre Amélioré pour Trajectoire */
+
+:root {
+    --bg-dark: #212121;
+    --bg-medium: #2e2e3f; /* Similaire aux inputs/tooltip dans style.css */
+    --bg-light: #3e3e3e;
+    --text-light: #ffffff;
+    --text-subtle: #cccccc;
+    --color-accent: #6aa84f; /* Couleur d'accent (Vert olive) */
+    --color-primary-button: #4a4a5f;
+    --color-hover-button: #5a5a6f;
+    --border-color: #555;
+    --spacing: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+/* Conteneur principal pour centrer le contenu et ajouter du padding */
+#main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+h1 {
+    font-size: 24px;
+    margin: var(--spacing) 0;
+    color: var(--text-light);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 5px;
+}
+
+/* Panneau de contrôle du haut (boutons et lien de retour) */
+#control-panel {
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+    background-color: var(--bg-medium);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du lien de retour */
+.back-link {
+    display: inline-block;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* Style des boutons (plus modernes) */
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: var(--color-primary-button);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    /* Ombre subtile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: var(--color-hover-button);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Zone du Canvas */
+#cv {
+    background: #121543; /* Fond plus sombre pour le canvas lui-même */
+    border: 2px solid var(--border-color);
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    min-height: 400px;
+    cursor: default;
+    transform-origin: 0 0;
+    border-radius: 8px;
+    /* Ombre légère pour le faire ressortir */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Panneau d'informations */
+.info {
+    margin: var(--spacing) 0;
+    padding: 15px;
+    background-color: var(--bg-medium);
+    border-radius: 8px;
+    /* Bande latérale d'accent */
+    border-left: 5px solid var(--color-accent);
+}
+
+.small {
+    font-size: 14px;
+    color: var(--text-subtle);
+    margin: 4px 0;
+}
+
+strong {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}

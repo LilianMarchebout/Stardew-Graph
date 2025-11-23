@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <title>Stardew Valley Crafting Graph</title>
   <link rel="stylesheet" href="/src/style.css">
+  <style>
+    .nav-button {
+      padding: 6px 8px;
+      font-size: 14px;
+      border: 1px solid #bbb;
+      text-decoration: none;
+      color: #111;
+      background-color: #f0f0f0;
+      display: inline-block;
+      line-height: 1.4;
+      border-radius: 4px; /* Optionnel: pour adoucir le look */
+    }
+    #center-control-container {
+      /* Assurez-vous que les éléments (select et lien) sont alignés */
+      display: flex;
+      gap: 8px; 
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
   <div id="center-control-container">
     <select id="graph-select"></select>
-  </div>
+    <a href="trajectoire.html" class="nav-button">
+      Calculs de Trajectoire
+    </a>
+    </div>
   
   <div id="left-control-container">
     <input type="text" id="search-input" placeholder="Search a node..." />

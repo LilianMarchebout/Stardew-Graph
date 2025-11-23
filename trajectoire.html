@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Traceur de trajectoire — Mesure distance</title>
+  <link rel="stylesheet" href="src/style_traj.css">
+</head>
+<body>
+  <div id="main-container"> 
+    <div id="control-panel">
+      <a href="index.html" class="back-link">← Retour aux Graphes</a>
+      <h1>Traceur de trajectoire — Mesure distance</h1>
+      
+      <div class="row controls">
+        <button id="clearBtn">Réinitialiser</button>
+        <button id="undoBtn">Annuler dernier point</button>
+        <button id="exportBtn">Exporter PNG</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <canvas id="cv" width="1200" height="700"></canvas>
+    </div>
+
+    <div class="info">
+      <div class="small">Mode : <span id="mode">Placer points</span> — **Clic gauche** pour ajouter/déplacer les points. **Molette** pour zoomer (optimisé). **Clic molette** pour déplacer (pan). **Clic droit** pour annuler le dernier point.</div>
+      <div class="small">Distance totale : <strong id="distPx">0</strong> px </div>
+      <div class="small">**NOTE :** Les segments dont **une extrémité** touche la couleur <span style="color:#6aa84f">`#121543`</span> seront ignorés (distance = 0).</div>
+    </div>
+  </div>
+
+  <script src="src/trajectoire.js"></script>
+</body>
+</html>
